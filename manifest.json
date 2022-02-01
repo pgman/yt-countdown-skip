@@ -1,0 +1,17 @@
+{
+  "name": "YouTube Countdown Skip",
+  "manifest_version": 2,
+  "version": "1.0",
+  "browser_action": {
+    "default_title": "YouTube Countdown Skip"
+  },
+  "description": "YouTube のカウントダウンをスキップする",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/watch?*"
+      ],
+      "js": ["jquery.min.js", "content.js"]
+    }
+  ]
+}
