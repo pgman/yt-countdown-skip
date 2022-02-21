@@ -1,9 +1,9 @@
 {
-  "name": "YouTube Countdown Skip",
+  "name": "Skip YouTube Countdown",
   "manifest_version": 2,
   "version": "1.0",
   "browser_action": {
-    "default_title": "YouTube Countdown Skip"
+    "default_title": "Skip YouTube Countdown"
   },
   "description": "YouTube のカウントダウンをスキップする",
   "content_scripts": [
@@ -11,7 +11,7 @@
       "matches": [
         "https://www.youtube.com/watch?*"
       ],
-      "js": ["jquery.min.js", "content.js"]
+      "js": ["content.js"]
     }
   ]
 }
