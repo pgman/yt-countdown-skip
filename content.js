@@ -1,7 +1,7 @@
 setInterval(() => {
-	const $elm = $('.ytp-autonav-endscreen-countdown-container');		
-	if($elm.css('display') !== 'none' && $elm.length) {
-		const $a = $elm.find('a.ytp-autonav-endscreen-link-container');
-		$a[0].click();
+	const container = document.querySelector('.ytp-autonav-endscreen-countdown-container');	
+	if(container && container.style.display && container.style.display !== 'none' ) {
+		const a = document.querySelector('a.ytp-autonav-endscreen-link-container');	
+		if(a) { a.click(); }
 	}
 }, 100);
